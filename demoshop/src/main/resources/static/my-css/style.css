@@ -1,0 +1,27 @@
+body a {
+  color: black; /* Đặt màu chữ là đen */
+  text-decoration: none; /* Loại bỏ gạch chân */
+  list-style-type: none; /* Loại bỏ ký hiệu danh sách */
+}
+
+
+.dropend-hover .dropdown-menu-hover {
+  position: absolute;
+  top: 0;
+  left: 100%; /* Đặt dropdown menu sát lề phải của thẻ a */
+  margin-left: 0; /* Không có lề trái */
+}
+
+.dropend-hover:hover .dropdown-menu-hover {
+  display: flex; /* Hiển thị các mục con theo kiểu flexbox */
+  flex-direction: row; /* Sắp xếp các mục con theo chiều ngang */
+}
+
+.dropdown-menu-hover li {
+  margin-right: 20px; /* Khoảng cách giữa các mục */
+  width: 200px
+}
+
+.dropdown-menu-hover li:last-child {
+  margin-right: 0; /* Không có margin-right cho mục cuối cùng */
+}

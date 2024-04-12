@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.com">
+<head>
+  <meta charset="UTF-8">
+  <title>Category list</title>
+  <link th:href="@{../css/bootstrap.min.css}" rel="stylesheet">
+  <link th:href="@{../my-css/style.css}" rel="stylesheet">
+
+  <!-- bootstrap icon -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+<!--    header -->
+<header class="container" style="position: fixed; top: 0; left: 0; right: 0;
+                                z-index: 1000; background-color: #f3b">
+  <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+    <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+      <li><a href="#laptop" class="nav-link px-2 link-body-emphasis"><b>Laptop</b></a></li>
+      <li><a href="#pc" class="nav-link px-2 link-body-emphasis"><b>PC</b></a></li>
+      <li><a href="#camera" class="nav-link px-2 link-body-emphasis"><b>Camera</b></a></li>
+    </ul>
+
+    <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+      <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+    </form>
+
+    <div class="dropdown text-end">
+      <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle"
+         data-bs-toggle="dropdown" aria-expanded="false">
+        <img src="https://scontent.fhan14-5.fna.fbcdn.net/v/t39.30808-1/428161430_1110295763309630_6603499720418244992_n.jpg?stp=dst-jpg_p320x320&_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeEQQB0P3tlUJr8lZ_xqMQZo7Cvb3ycAfsXsK9vfJwB-xZO_CoPNn1eXIC8ts9GyN8MjvLO46IH_0e-XI4QEvOD7&_nc_ohc=ggES4z7GDvoAb7cAFag&_nc_ht=scontent.fhan14-5.fna&oh=00_AfAuzPiui4WO2JntD0pSHsf9fwMaLzx8X8WmgUloUpcxTw&oe=661EF7A8" alt="mdo" width="32" height="32" class="rounded-circle">
+      </a>
+      <ul class="dropdown-menu text-small">
+        <li><a class="dropdown-item" href="#">Đăng nhập</a></li>
+        <li><a class="dropdown-item" href="#">Đăng ký</a></li>
+      </ul>
+    </div>
+  </div>
+</header>

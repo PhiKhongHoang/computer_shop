@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.com">
+
+<div th:include="header"></div>
+
+<!--    main -->
+<main class="container mb-5" style="margin-top: 60px;">
+    <!--    body-->
+<!--    laptop-->
+    <div class="text-center" id="laptop" style="background-color: #ccc"><h2>Laptop</h2></div>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3 my-5">
+        <div class="col" th:each="laptop : ${laptops}">
+            <div class="card shadow-sm">
+                <img th:src="${laptop.image}">
+                <div class="card-body">
+                    <b th:text="${laptop.name}" class="card-text" style="font-size:15px;"></b>
+                    <hr>
+                    <b>cpu: </b> <span th:text="${laptop.cpu}" class="card-text"></span>
+                    <br>
+                    <b>ram: </b> <span th:text="${laptop.ram}" class="card-text"></span>
+                    <br>
+                    <b>Ổ cứng: </b> <span th:text="${laptop.drive}" class="card-text"></span>
+                    <br>
+                    <b>card: </b> <span th:text="${laptop.card}" class="card-text"></span>
+                    <br>
+                    <b>M.hình: </b> <span th:text="${laptop.screen}" class="card-text"></span>
+                    <hr>
+                    <div>
+                        <span th:text="${#numbers.formatDecimal(laptop.price, 0, 'COMMA', 1, 'POINT')}"
+                              style="font-size:30px;"></span> <span style="font-size:25px;"> đ</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--pc-->
+    <div class="text-center" id="pc" style="background-color: #ccc"><h2>PC</h2></div>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3 my-5">
+        <div class="col" th:each="laptop : ${laptops}">
+            <div class="card shadow-sm">
+                <img th:src="${laptop.image}">
+                <div class="card-body">
+                    <b th:text="${laptop.name}" class="card-text" style="font-size:15px;"></b>
+                    <hr>
+                    <b>cpu: </b> <span th:text="${laptop.cpu}" class="card-text"></span>
+                    <br>
+                    <b>ram: </b> <span th:text="${laptop.ram}" class="card-text"></span>
+                    <br>
+                    <b>Ổ cứng: </b> <span th:text="${laptop.drive}" class="card-text"></span>
+                    <br>
+                    <b>card: </b> <span th:text="${laptop.card}" class="card-text"></span>
+                    <br>
+                    <b>M.hình: </b> <span th:text="${laptop.screen}" class="card-text"></span>
+                    <hr>
+                    <div>
+                        <span th:text="${#numbers.formatDecimal(laptop.price, 0, 'COMMA', 1, 'POINT')}"
+                              style="font-size:30px;"></span> <span style="font-size:25px;"> đ</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--camera-->
+    <div class="text-center" id="camera" style="background-color: #ccc"><h2>Camera</h2></div>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3 my-5">
+        <div class="col" th:each="laptop : ${laptops}">
+            <div class="card shadow-sm">
+                <img th:src="${laptop.image}">
+                <div class="card-body">
+                    <b th:text="${laptop.name}" class="card-text" style="font-size:15px;"></b>
+                    <hr>
+                    <b>cpu: </b> <span th:text="${laptop.cpu}" class="card-text"></span>
+                    <br>
+                    <b>ram: </b> <span th:text="${laptop.ram}" class="card-text"></span>
+                    <br>
+                    <b>Ổ cứng: </b> <span th:text="${laptop.drive}" class="card-text"></span>
+                    <br>
+                    <b>card: </b> <span th:text="${laptop.card}" class="card-text"></span>
+                    <br>
+                    <b>M.hình: </b> <span th:text="${laptop.screen}" class="card-text"></span>
+                    <hr>
+                    <div>
+                        <span th:text="${#numbers.formatDecimal(laptop.price, 0, 'COMMA', 1, 'POINT')}"
+                              style="font-size:30px;"></span> <span style="font-size:25px;"> đ</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div th:include="footer"></div>
